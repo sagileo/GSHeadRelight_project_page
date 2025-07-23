@@ -9,7 +9,8 @@
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" /> -->
+  <meta property="og:image" content="static/image/carousel1.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
@@ -51,6 +52,9 @@
     src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 <body>
 
@@ -60,39 +64,46 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">R&B: REGION AND BOUNDARY AWARE ZERO-SHOT
-              GROUNDED TEXT-TO-IMAGE GENERATION</h1>
+            <h1 class="title is-1 publication-title">GSHeadRelight: Fast Relightability for 3D Gaussian Head Synthesis</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="" target="_blank">Jiayu Xiao</a><sup>1,2*</sup>,</span>
+                <a href="https://scholar.google.com.sg/citations?hl=zh-CN&user=A-ISUPEAAAAJ" target="_blank">Henglei Lv</a><sup>1,2</sup>,</span>
                   <span class="author-block">
-                    <a href="" target="_blank">Henglei Lv</a><sup>1,2*</sup>,
+                    <a href="https://www.bdeng.me" target="_blank">Bailin Deng</a><sup>3</sup>,
                   <span class="author-block">
-                    <a href="" target="_blank">Liang Li</a><sup>1&dagger;</sup>,</span>
+                    <a href="https://guojianzhu.com" target="_blank">Jianzhu Guo</a><sup>4</sup>,</span>
                   </span>
                   <span class="author-block">
-                    <a href="" target="_blank">Shuhui Wang</a><sup>1</sup>,
+                    Xiaoqiang Liu</a><sup>4</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="" target="_blank">Qingming Huang</a><sup>3</sup>
+                    <a href="https://scholar.google.com/citations?hl=en&user=P6MraaYAAAAJ" target="_blank">Pengfei Wan</a><sup>4</sup>
+                  </span>
+                  <span class="author-block">
+                    Di Zhang</a><sup>4</sup>
+                  </span>
+                  <span class="author-block">
+                    <a href="http://www.geometrylearning.com/lin/" target="_blank">Lin Gao</a><sup>1,2*</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Key Lab of Intell. Info. Process., Inst. of Comput. Tech., CAS, Beijing, China</span>
-                    <span class="author-block"><sup>2</sup>University of Chinese Academy of Sciences, Beijing, China</span>
-                    <span class="author-block"><sup>3</sup>Peng Cheng Laboratory, Shenzhen, China</span>
+                    <span class="author-block"><sup>1</sup>Institute of Computing Technology, Chinese Academy of Sciences</span><br>
+                    <span class="author-block"><sup>2</sup>University of Chinese Academy of Sciences, Beijing, China</span><br>
+                    <span class="author-block"><sup>3</sup>Cardiff University</span><br>
+                    <span class="author-block"><sup>4</sup>Kuaishou Technology</span><br>
+                    <span><b>SIGGRAPH 2025 Conference Track</b></span><br>
                     <!-- <span class="author-block"></span> -->
-                    <span class="email-cntrb"><small><br><sup>&dagger; Indicates Corresponding Author</sup></small></span>
-                    <span class="email-cntrb"><small><br><sup>* Indicates Equal Contribution</sup></small></span>
+                    <!-- <span class="email-cntrb"><small><br><sup>&dagger; Indicates Corresponding Author</sup></small></span>
+                    <span class="email-cntrb"><small><br><sup>* Indicates Equal Contribution</sup></small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2310.08872.pdf" target="_blank"
+                        <a href="" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -114,7 +125,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/StevenShaw1999/RnB" target="_blank"
+                    <a href="https://github.com/sagileo/GSHeadRelight" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -125,7 +136,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2310.08872" target="_blank"
+                  <a href="" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -143,37 +154,39 @@
 
 
 
-<!-- <section class="hero teaser">
-  </div>
-  Abstract
-  </div>
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-
 
 <!-- Introduction image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/Introduction.png" alt="Intro Image">
-      <h2 class="subtitle has-text-centered">
-        R&B injects spatial instructions into the denoising process through classifier guidance. And generates images that highly align with the text description and layout instructions without auxiliary training. 
-      </h2>
+      <figure>
+        <img src="static/images/teaser.png" alt="Intro Image">
+        <figcaption>
+          GSHeadRelight incorporates an efficient yet effective lighting model into generative 3D Gaussian and can synthesize high-quality relightable 3D Gaussian heads that allow for novel view synthesis and relighting given any HDRI environment maps. Our method does not require expensive light stage data and achieves real-time rendering at <b>240 FPS</b>, surpassing the previous 3D-aware portrait relighting research by at least 12 times.
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
 <!-- End introduction Image -->
+
+<section class="hero teaser">
+  <!-- </div>
+  Abstract
+  </div> -->
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+
+        <source src="static/videos/short.mp4"
+        type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2> -->
+    </div>
+  </div>
+</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -183,7 +196,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent text-to-image (T2I) diffusion models have achieved remarkable progress in generating high-quality images given text-prompts as input. However, these models fail to convey appropriate spatial composition specified by a layout instruction. In this work, we probe into zero-shot grounded T2I generation with diffusion models, that is, generating images corresponding to the input layout information without training auxiliary modules or finetuning diffusion models. We propose a Region and Boundary (R&B) aware cross-attention guidance approach that gradually modulates the attention maps of diffusion model during generative process, and assists the model to synthesize images (1) with high fidelity, (2) highly compatible with textual input, and (3) interpreting layout instructions accurately. Specifically, we leverage the discrete sampling to bridge the gap between consecutive attention maps and discrete layout constraints, and design a region-aware loss to refine the generative layout during diffusion process. We further propose a boundary- aware loss to strengthen object discriminability within the corresponding regions. Experimental results show that our method outperforms existing state-of-the-art zero-shot grounded T2I generation methods by a large margin both qualitatively and quantitatively on several benchmarks.
+            Relighting and novel view synthesis of human portraits are essential in applications such as portrait photography, virtual reality (VR), and augmented reality (AR). Despite recent progress, 3D-aware portrait relighting remains challenging due to the demands for photorealistic rendering, real-time performance, and generalization to unseen subjects. Existing works either rely on supervision from limited and expensive light stage captured data or produce suboptimal results. Moreover, many works are based on generative NeRFs, which suffer from poor 3D consistency and low real-time performance. We resort to recent progress on generative 3D Gaussians and design a lighting model based on a unified neural radiance transfer representation, which responds linearly to incident light. Using only in-the-wild images, our method achieves state-of-the-art relighting results and a significantly faster rendering speed (x12) compared to previous 3D-aware portrait relighting research.
           </p>
         </div>
       </div>
@@ -200,104 +213,72 @@
       <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Framework</h2>
       </div>
-      <img src="static/images/method_new.png" alt="Methods">
-      <h2 class="subtitle has-text-centered">
-        Two loss functions are proposed to modulate the cross-attention of diffusion unet: region-aware loss and boundary-aware loss. Optimizing these two losses helps to correctly incorperate the layout instructions into generative process.
-      </h2>
+      <img src="static/images/pipeline.png" alt="Methods">
+        <figcaption>
+          <p>
+          We incorporate a lighting model based on unified radiance transfer into a generative 3D Gaussian framework. The generator \(G\) takes in Gaussian noise and camera pose as condition and generates for each Gaussian an embedding \(\mathbf{x}\), which is then linearly transformed into the albedo \(\mathbf{\rho}\) and geometry attributes \(\{\mathbf{g}\}\) including position, scale, rotation and opacity. A light-weight decoder conditioned on view direction transforms \(\mathbf{x}\) into radiance transfer coefficients \(\mathbf{t}\), which are used to compute the unified light transport with the light condition. Color is obtained by multiplying the light transport component with the albedo. The image is then rendered by standard splatting and sent to the discriminator \(D\), which takes both camera pose and light condition as input. Mapping modules are omitted for simplicity. Gaussian noise and camera pose are represented as icons, and light condition as a diffuse sphere.
+          </p>
+        </figcaption>
     </div>
   </div>
 </section>
 <!-- End Framework -->
 
 
-<!-- Visual comparison -->
-<section class="section hero is-light">
-  <div class="hero-body">
-    <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3">Visual comparisons with competing training-free methods</h2>
-    </div>
-    <div class="container is-max-desktop">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/comp.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Visual comparisons with different baselines across different text prompts
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/supp_comp_1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Visual comparisons with different baselines across different random seeds
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/supp_comp_2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Visual comparisons with different baselines across different random seeds
-       </h2>
-     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End Visual comparison -->
-
-
 <!-- Variation image-->
 <section class="section hero is-small">
   <div class="hero-body">
     <div class="columns is-centered has-text-centered">
-      <h2 class="title is-3">Visual variations across different text and box prompts</h2>
+      <h2 class="title is-3">Visual Results</h2>
     </div>
     <div class="container is-max-desktop">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/seeds1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+        <img src="static/images/white_light.png" alt="MY ALT TEXT"/>
+        <!-- <h2 class="subtitle has-text-centered">
           Visual variations across different random seeds
-        </h2>
+        </h2> -->
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/seeds2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
+        <img src="static/images/rgb_light.png" alt="MY ALT TEXT"/>
+        <!-- <h2 class="subtitle has-text-centered">
           Visual variations across different random seeds
-        </h2>
+        </h2> -->
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/seeds3.png" alt="MY ALT TEXT"/>
+        <img src="static/images/env_map.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Visual variations across different random seeds
        </h2>
      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/change_obj.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Visual variations across different text prompts
-      </h2>
-    </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/variation.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Multiple variations of generated images. The shape and localization of boxes are changed for spatial variations. 
-          And the instances of text prompts are changed for semantic variations.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
 </section>
 <!-- End variation image -->
 
+<!-- Visual comparison -->
+<section class="hero teaser is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Visual Comparison</h2>
+      </div>
+      <img src="static/images/compare.png" alt="Methods">
+        <!-- <figcaption>
+          <p>
+          We incorporate a lighting model based on unified radiance transfer into a generative 3D Gaussian framework. The generator \(G\) takes in Gaussian noise and camera pose as condition and generates for each Gaussian an embedding \(\mathbf{x}\), which is then linearly transformed into the albedo \(\mathbf{\rho}\) and geometry attributes \(\{\mathbf{g}\}\) including position, scale, rotation and opacity. A light-weight decoder conditioned on view direction transforms \(\mathbf{x}\) into radiance transfer coefficients \(\mathbf{t}\), which are used to compute the unified light transport with the light condition. Color is obtained by multiplying the light transport component with the albedo. The image is then rendered by standard splatting and sent to the discriminator \(D\), which takes both camera pose and light condition as input. Mapping modules are omitted for simplicity. Gaussian noise and camera pose are represented as icons, and light condition as a diffuse sphere.
+          </p>
+        </figcaption> -->
+    </div>
+  </div>
+</section>
+<!-- End Visual comparison -->
+
 <!-- Quant res -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="hero-body">
     <div class="columns is-centered has-text-centered">
       <h2 class="title is-3">Quantitative comparisons</h2>
@@ -305,14 +286,12 @@
     <div class="container is-max-desktop">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/res1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Quantitative results on HRS and DrawBench, best results are <b>bold</b>
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/res2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Quantitative comparisons of spatial accuracy and text similarity
@@ -321,7 +300,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- Quant res -->
 
 
@@ -362,7 +341,7 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
@@ -376,7 +355,7 @@
         }
     </code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
